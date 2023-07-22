@@ -1,0 +1,450 @@
+.header__wrp {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 100vw;
+  border-bottom: 1px solid #1f1f1f;
+  position: relative;
+}
+
+.header__logo {
+  margin-right: 48px;
+}
+
+.header__burger {
+  position: absolute;
+  right: 40px;
+  top: 16px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
+}
+
+.header__right-wrp {
+  width: 100%;
+}
+
+.header__nav {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.header__nav__list li {
+  list-style: none;
+  margin-right: 16px;
+  padding: 8px;
+  line-height: 24px;
+}
+
+.header__profile {
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+}
+
+.header__profile a {
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+}
+
+.header__profile select {
+  height: 40px;
+  padding: 0px 4px 0px 8px;
+  gap: 4px;
+  border-radius: 2px;
+  border: none;
+  background: var(--black-2, #1f1f1f);
+}
+
+.header__profile__button {
+  height: 40px;
+  padding: 0px 12px;
+  gap: 4px;
+  border-radius: 2px;
+  background: #1f1f1f;
+  border: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 962px) {
+  .header__right-wrp {
+    visibility: hidden;
+  }
+  .header__burger {
+    display: block;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  background-color: #131313;
+  overflow-x: hidden;
+}
+
+.contenier {
+  margin: auto;
+  padding-right: 96px;
+  padding-left: 96px;
+  width: 100vw;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1394px) {
+  .contenier {
+    margin: auto;
+    padding-right: 70px;
+    padding-left: 70px;
+    width: 100vw;
+  }
+}
+.main-wrp {
+  padding-top: 126px;
+  padding-bottom: 102px;
+}
+
+.main__left-side {
+  width: 50%;
+}
+
+.main__left-side h1 {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+
+.main__left-side h1 span {
+  color: #a78b6b;
+}
+
+.main__left-side__button {
+  padding: 12px 16px 12px 16px;
+  gap: 4px;
+  border-radius: 2px;
+  border: 1px solid #a78b6b;
+  background-color: transparent;
+  margin-bottom: 32px;
+  color: var(--breadly-brown, #a78b6b);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  -moz-column-gap: 14px;
+       column-gap: 14px;
+  cursor: pointer;
+}
+
+.main__left-side__button img {
+  transform: rotate(-90deg);
+}
+
+.main__left-side__list {
+  list-style: none;
+}
+
+.main__left-side__list li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.main__left-side__list li:not(:nth-child(2)) {
+  opacity: 0.400000006;
+}
+
+.main__left-side__list .active {
+  padding: 5px;
+  border-radius: 100%;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+
+.main__right-side {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.main__right-side-frame {
+  position: absolute;
+  right: -96px;
+  bottom: -230px;
+}
+
+.main__right-side__main-img {
+  position: absolute;
+  z-index: 4;
+  bottom: -230px;
+  right: -30px;
+}
+
+@media only screen and (max-width: 1394px) {
+  .main__left-side h1 {
+    font-size: 40px;
+    font-weight: 600;
+  }
+  .main__right-side-frame {
+    position: absolute;
+    right: -200px;
+  }
+}
+@media only screen and (max-width: 1116px) {
+  .main-wrp {
+    flex-direction: column-reverse;
+  }
+  .main__right-side {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+  .main__right-side__main-img {
+    position: static;
+    margin-right: -60px;
+  }
+  .main__right-side-frame {
+    display: none;
+  }
+}
+.menu__header {
+  justify-content: space-between;
+  border: 1px solid #1f1f1f;
+  background: #131313;
+}
+
+.menu__header__list li {
+  list-style: none;
+  padding: 16px 12px;
+  border-bottom: 4px solid transparent;
+  line-height: 24px;
+  transition: all 0.9s ease;
+}
+
+.menu__header__list li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.menu__header__list li:hover {
+  border-bottom: 4px solid #a78b6b;
+}
+
+.link {
+  transition: all 0.9s ease;
+}
+
+.menu__header__list li:hover .link {
+  color: #a78b6b;
+}
+
+.menu__header__select {
+  padding: 16px 0px;
+  width: 50px;
+  border-radius: 2px;
+  border: none;
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 1116px) {
+  .menu__header__list {
+    display: none;
+  }
+}
+.kitchen__wrp {
+  padding-top: 48px;
+  padding-bottom: 64px;
+}
+
+.kitchen__wrp h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  margin-bottom: 56px;
+}
+
+.kitchen__cards {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-right: -24px;
+}
+
+.card {
+  margin-right: 24px;
+}
+
+.card {
+  width: calc(25% - 24px);
+  padding: 16px 0;
+}
+
+.card .card__img {
+  height: 50%;
+  margin-bottom: 16px;
+  justify-content: center;
+}
+
+.card__content {
+  padding: 16px;
+}
+
+.card__content h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+
+.card__content span {
+  color: #a78b6b;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+
+.card__content p {
+  color: #999797;
+  font-weight: 300;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+
+.card__button {
+  cursor: pointer;
+  padding: 12px;
+  color: #a78b6b;
+  font-weight: 600;
+  line-height: 20px;
+  width: 100%;
+  border-radius: 2px;
+  background: #1f1f1f;
+  border: none;
+}
+
+@media only screen and (max-width: 1246px) {
+  .card {
+    width: calc(33.3333333333% - 24px);
+  }
+  .kitchen__cards {
+    justify-content: start;
+  }
+}
+@media only screen and (max-width: 1088px) {
+  .card {
+    width: calc(50% - 24px);
+  }
+}
+@media only screen and (max-width: 638px) {
+  .card {
+    width: calc(100% - 24px);
+  }
+}
+.footer__wrp {
+  background: #181818;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.footer__logo {
+  margin-right: 48px;
+}
+
+.footer__nav {
+  width: 100%;
+  justify-content: center;
+}
+
+.footer__nav__list li {
+  list-style: none;
+  margin-right: 16px;
+  padding: 8px;
+  line-height: 24px;
+}
+
+.footer__line {
+  margin: 40px 0;
+  height: 1px;
+  width: 100%;
+  background: #3f3f3f;
+}
+
+.footer__bottom {
+  justify-content: space-between;
+}
+
+.footer__bottom p {
+  color: #808080;
+  line-height: 20px;
+}
+
+.footer__bottom__list {
+  list-style: none;
+}
+
+.footer__bottom__list li:not(:last-child) {
+  margin-right: 16px;
+}
+
+@media only screen and (max-width: 700px) {
+  .footer__nav__list {
+    display: none;
+  }
+}
+/* fonts*/
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-Bold.woff") format("woff2"), url("../fonts/Manrope-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-Medium.woff2") format("woff2"), url("../fonts/Manrope-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-ExtraLight.woff2") format("woff2"), url("../fonts/Manrope-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-Regular.woff2") format("woff2"), url("../fonts/Manrope-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-Light.woff2") format("woff2"), url("../fonts/Manrope-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-Bold.woff2") format("woff2"), url("../fonts/Manrope-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-SemiBold.woff2") format("woff2"), url("../fonts/Manrope-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}/*# sourceMappingURL=main.css.map */
