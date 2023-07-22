@@ -19,6 +19,7 @@
 .card {
   width: calc(100% / 4 - 24px);
   padding: 16px 0;
+  border: 2px solid red;
 }
 .card__img {
   height: 50%;
